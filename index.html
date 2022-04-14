@@ -19,77 +19,87 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a class="header-logo-link" href="./index.html"
-          ><p class="header-logo">
-            <span class="header-logo-web">Web</span>Studio
-          </p>
-        </a>
-        <ul class="list-settings">
-          <li>
-            <a href="./index.html" class="menu-list-item-active">Студия</a>
+      <div class="header-block">
+        <nav class="nav-menu">
+          <a class="header-logo-link" href="./index.html"
+            ><p class="header-logo">
+              <span class="header-logo-web">Web</span>Studio
+            </p>
+          </a>
+          <ul class="list-settings">
+            <li class="menu-list">
+              <a href="./index.html" class="active">Студия</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-list-item" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-list-item">Контакты</li>
+          </ul>
+        </nav>
+        <ul class="list-settings list-margin">
+          <li class="menu-list">
+            <a class="contact-list-item" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="menu-list-item">
-            <a class="menu-list-item" href="./portfolio.html">Портфолио</a>
+          <li class="menu-list">
+            <a class="contact-list-item" href="tel:+380991111111"
+              >+38 096 111 11 11</a
+            >
           </li>
-          <li class="menu-list-item">Контакты</li>
         </ul>
-      </nav>
-      <ul class="list-settings">
-        <li>
-          <a class="contact-list-item" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="contact-list-item" href="tel:+380991111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button class="hero-button">Заказать услугу</button>
+        <div class="hero-block">
+          <h1 class="hero-text">
+            ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />
+            ДЛЯ ВАШЕГО БИЗНЕСА
+          </h1>
+          <button class="hero-button">Заказать услугу</button>
+        </div>
       </section>
       <section>
         <h2 class="visually-hidden">Коротко о нашей компании и подходе</h2>
-        <ul class="list-settings">
-          <li>
+        <div class="container">
+          <ul class="list-settings">
+          <li class="about-us-blocks">
             <h3 class="about-us-list-head">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
             <p class="about-us-list-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="about-us-blocks">
             <h3 class="about-us-list-head">ПУНКТУАЛЬНОСТЬ</h3>
             <p class="about-us-list-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="about-us-blocks">
             <h3 class="about-us-list-head">ПЛАНИРОВАНИЕ</h3>
             <p class="about-us-list-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="about-us-blocks">
             <h3 class="about-us-list-head">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
             <p class="about-us-list-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
           </li>
+        </div>
         </ul>
       </section>
       <section>
+        <div class="container">
         <h2 class="name-section">Чем мы занимаемся</h2>
         <ul class="list-settings">
-          <li>
+          <li class="cards-wdw">
             <img
               width="370"
               height="294"
@@ -97,7 +107,7 @@
               alt="photo from section what do we do"
             />
           </li>
-          <li>
+          <li class="cards-wdw">
             <img
               width="370"
               height="294"
@@ -105,7 +115,7 @@
               alt="photo from section what do we do"
             />
           </li>
-          <li>
+          <li class="cards-wdw">
             <img
               width="370"
               height="294"
@@ -114,12 +124,14 @@
             />
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <section class="our-team-background">
-      <h2 class="name-section">Наша команда</h2>
+      <div class="container">
+      <h2 class="name-section our-team">Наша команда</h2>
       <ul class="list-settings">
-        <li>
+        <li class="cards">
           <img
             width="270"
             height="260"
@@ -129,7 +141,7 @@
           <h3 class="our-teammate">Igor Demyanenko</h3>
           <p class="our-teammate-description">Product Designer</p>
         </li>
-        <li>
+        <li class="cards">
           <img
             width="270"
             height="260"
@@ -139,7 +151,7 @@
           <h3 class="our-teammate">Olga Repina</h3>
           <p class="our-teammate-description">Frontend Developer</p>
         </li>
-        <li>
+        <li class="cards">
           <img
             width="270"
             height="260"
@@ -149,7 +161,7 @@
           <h3 class="our-teammate">Nikolai Tarasov</h3>
           <p class="our-teammate-description">Marketing</p>
         </li>
-        <li>
+        <li class="cards">
           <img
             width="270"
             height="260"
@@ -160,13 +172,15 @@
           <p class="our-teammate-description">UI Designer</p>
         </li>
       </ul>
+      </div>
     </section>
     <footer class="footer-background">
+      <div class="container-footer">
       <a class="footer-logo-link" href="./index.html">
         <span class="footer-logo-web">Web</span>Studio
       </a>
       <address>
-        <ul class="list-settings">
+        <ul class="footer-list">
           <li>
             <a class="footer-adress" href="">г. Киев, пр-т Леси Украинки, 26</a>
           </li>
@@ -182,6 +196,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
