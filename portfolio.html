@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/syles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,35 +24,39 @@
   </head>
   <body>
     <header>
-      <div class="header-block">
-        <nav class="nav-menu">
-          <a class="header-logo-link" href="./index.html"
-            ><p class="header-logo">
-              <span class="header-logo-web">Web</span>Studio
-            </p>
-          </a>
-          <ul class="list-settings">
+      <div class="container">
+        <div class="flex">
+          <nav class="nav-menu">
+            <a class="header-logo-link" href="./index.html"
+              ><p class="header-logo">
+                <span class="header-logo-web">Web</span>Studio
+              </p>
+            </a>
+            <ul class="list-settings">
+              <li class="menu-list">
+                <a class="menu-list-item" href="./index.html">Студия</a>
+              </li>
+              <li class="menu-list">
+                <a class="active" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="menu-list">
+                <a class="menu-list-item" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="list-settings-contacts">
             <li class="menu-list">
-              <a href="./index.html" class="menu-list-item">Студия</a>
+              <a class="contact-list-item" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
             <li class="menu-list">
-              <a class="active" href="./portfolio.html">Портфолио</a>
+              <a class="contact-list-item" href="tel:+380991111111"
+                >+38 096 111 11 11</a
+              >
             </li>
-            <li class="menu-list-item">Контакты</li>
           </ul>
-        </nav>
-        <ul class="list-settings list-margin">
-          <li class="menu-list">
-            <a class="contact-list-item" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="menu-list">
-            <a class="contact-list-item" href="tel:+380991111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -81,8 +89,10 @@
                   src="images/Technocrack.jpg"
                   alt="Technocrack"
                 />
-                <h2 class="project-name">Технокряк</h2>
-                <p class="project-description">Веб-сайт</p></a
+                <div class="card-box">
+                  <h2 class="project-name">Технокряк</h2>
+                  <p class="project-description">Веб-сайт</p>
+                </div></a
               >
             </li>
             <li class="project-cards">
@@ -93,8 +103,10 @@
                   src="images/NewOrleanVsGoldenStar.jpg"
                   alt="NewOrleanVsGoldenStar"
                 />
-                <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
-                <p class="project-description">Дизайн</p></a
+                <div class="card-box">
+                  <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
+                  <p class="project-description">Дизайн</p>
+                </div></a
               >
             </li>
             <li class="project-cards">
@@ -105,8 +117,10 @@
                   src="images/Seafood.jpg"
                   alt="Seafood"
                 />
-                <h2 class="project-name">Ресторан Seafood</h2>
-                <p class="project-description">Приложение</p></a
+                <div class="card-box">
+                  <h2 class="project-name">Ресторан Seafood</h2>
+                  <p class="project-description">Приложение</p>
+                </div></a
               >
             </li>
             <li class="project-cards">
@@ -117,8 +131,10 @@
                   src="images/PrimeProject.jpg"
                   alt="PrimeProject"
                 />
-                <h2 class="project-name">Проект Prime</h2>
-                <p class="project-description">Маркетинг</p></a
+                <div class="card-box">
+                  <h2 class="project-name">Проект Prime</h2>
+                  <p class="project-description">Маркетинг</p>
+                </div></a
               >
             </li>
             <li class="project-cards">
@@ -129,8 +145,10 @@
                   src="images/BoxesProject.jpg"
                   alt="BoxesProject"
                 />
-                <h2 class="project-name">Проект Boxes</h2>
-                <p class="project-description">Приложение</p></a
+                <div class="card-box">
+                  <h2 class="project-name">Проект Prime</h2>
+                  <p class="project-description">Маркетинг</p>
+                </div></a
               >
             </li>
             <li class="project-cards">
@@ -141,8 +159,10 @@
                   src="images/InspirationHasNoBorders.jpg"
                   alt="InspirationHasNoBorders"
                 />
-                <h2 class="project-name">Inspiration has no Borders</h2>
-                <p class="project-description">Веб-сайт</p></a
+                <div class="card-box">
+                  <h2 class="project-name">Inspiration has no Borders</h2>
+                  <p class="project-description">Веб-сайт</p>
+                </div></a
               >
             </li>
             <li class="project-cards">
@@ -153,8 +173,10 @@
                   src="images/LimitedEdition.jpg"
                   alt="LimitedEdition"
                 />
-                <h2 class="project-name">Издание Limited Edition</h2>
-                <p class="project-description">Дизайн</p></a
+                <div class="card-box">
+                  <h2 class="project-name">Издание Limited Edition</h2>
+                  <p class="project-description">Дизайн</p>
+                </div></a
               >
             </li>
             <li class="project-cards">
@@ -165,8 +187,10 @@
                   src="images/LabProject.jpg"
                   alt="LabProject"
                 />
-                <h2 class="project-name">Проект LAB</h2>
-                <p class="project-description">Маркетинг</p></a
+                <div class="card-box">
+                  <h2 class="project-name">Проект LAB</h2>
+                  <p class="project-description">Маркетинг</p>
+                </div></a
               >
             </li>
             <li class="project-cards">
@@ -177,8 +201,10 @@
                   src="images/GrowingBusiness.jpg"
                   alt="GrowingBusiness"
                 />
-                <h2 class="project-name">Growing Business</h2>
-                <p class="project-description">Приложение</p></a
+                <div class="card-box">
+                  <h2 class="project-name">Growing Business</h2>
+                  <p class="project-description">Приложение</p>
+                </div></a
               >
             </li>
           </ul>
@@ -192,18 +218,18 @@
         </a>
         <address>
           <ul class="footer-list">
-            <li>
+            <li class="footer-item">
               <a class="footer-adress" href=""
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
-              <a class="footer-item" href="mailto:info@example.com"
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
-            <li>
-              <a class="footer-item" href="tel:+380991111111"
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >
             </li>
