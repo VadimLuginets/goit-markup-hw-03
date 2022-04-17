@@ -46,7 +46,7 @@ a {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 114%;
+  line-height: 1.14;
   background-color: #ffffff;
   color: var(--textcolor);
   letter-spacing: 0.03em;
@@ -176,7 +176,7 @@ header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 119%;
+  line-height: 1.19;
 }
 
 .footer-logo-link {
@@ -186,7 +186,7 @@ header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 119%;
+  line-height: 1.19;
 }
 
 .footer-adress {
@@ -356,7 +356,7 @@ header {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  line-height: 162%;
+  line-height: 1.62;
 }
 
 .project-name {
