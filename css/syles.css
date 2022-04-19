@@ -5,9 +5,17 @@
   box-sizing: border-box;
 }
 
-section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section-no-padding-top {
+  padding-top: 0;
+}
+
+.section-no-padding-bottom {
+  padding-bottom: 0;
 }
 
 ul {
@@ -41,13 +49,15 @@ a {
   --active-elemnts: #2196f3;
   --footer-hero-background-color: #2f303a;
   --grey-color: #757575;
+  --white-color: #ffffff;
+  --background-white-grey: #f5f4fa;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.14;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   color: var(--textcolor);
   letter-spacing: 0.03em;
 }
@@ -160,7 +170,7 @@ header {
 
 /*----------------------------- FOOTER -----------------------------*/
 
-.footer-list {
+.footer-adress-margin {
   margin-top: 20px;
 }
 
@@ -168,7 +178,7 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--footer-hero-background-color);
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .footer-logo-web {
@@ -182,7 +192,7 @@ header {
 .footer-logo-link {
   display: block;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--white-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -193,12 +203,16 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  color: #ffffff;
+  color: var(--white-color);
   text-decoration: none;
 }
 
 .footer-item {
   margin-top: 9px;
+}
+
+.footer-item:first-child {
+  margin-top: 0px;
 }
 
 .footer-link {
@@ -245,10 +259,11 @@ header {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .hero-button {
+  border: none;
   margin: 30px auto 0 auto;
   display: block;
   margin-top: 30px;
@@ -261,7 +276,7 @@ header {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -299,7 +314,7 @@ header {
 }
 .cards {
   margin-right: 30px;
-  background: #ffffff;
+  background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -310,13 +325,13 @@ header {
 }
 
 .our-team-background {
-  padding-bottom: 94px;
-  background: #f5f4fa;
+  margin-bottom: 94px;
+  background: var(--background-white-grey);
 }
 
 .our-teammate {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -324,7 +339,7 @@ header {
 }
 
 .our-teammate-description {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -336,8 +351,9 @@ header {
 /*----------------------------- SECTION-1 -----------------------------*/
 
 .button {
+  padding: 6px 22px;
   display: block;
-  background: #f5f4fa;
+  background: var(--background-white-grey);
   border-radius: 4px;
   border-style: none;
   font-weight: 500;
@@ -348,7 +364,7 @@ header {
 }
 
 .button:hover {
-  color: #ffffff;
+  color: var(--white-color);
   border-radius: 4px;
   background: var(--active-elemnts);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -360,7 +376,6 @@ header {
 }
 
 .project-name {
-  padding-top: 10px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -369,7 +384,7 @@ header {
 }
 
 .project-description {
-  padding-top: 4px;
+  margin-top: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -377,7 +392,7 @@ header {
 }
 
 .list-projects {
-  margin-top: 34px;
+  margin-top: 50px;
 
   display: flex;
   flex-wrap: wrap;
@@ -406,8 +421,8 @@ header {
 }
 
 .card-box {
-  padding: 10px 24px 20px 24px;
-  background: #ffffff;
+  padding: 20px 24px 20px 24px;
+  background: var(--white-color);
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
