@@ -50,7 +50,7 @@ a {
   --footer-hero-background-color: #2f303a;
   --grey-color: #757575;
   --white-color: #ffffff;
-  --background-white-grey: #f5f4ff;
+  --background-white-grey: #f5f4fa;
 }
 
 body {
@@ -150,6 +150,10 @@ header {
   margin-left: 50px;
   text-decoration: none;
   color: var(--text-color);
+}
+
+.no-margin-left {
+  margin-left: 0;
 }
 
 .menu-list-item:hover {
@@ -325,7 +329,6 @@ header {
 }
 
 .our-team-background {
-  margin-bottom: 94px;
   background: var(--background-white-grey);
 }
 
@@ -393,6 +396,7 @@ header {
 
 .list-projects {
   margin-top: 50px;
+  margin-top: -30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -407,6 +411,7 @@ header {
 }
 
 .list-settings-buttons {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
